@@ -1,0 +1,145 @@
+@grid-gutter-width: 1em;
+@line-height-computed: 1em;
+
+@screen-xs-max: 767px;
+@screen-sm-max: 991px;
+@screen-md-max: 1199px;
+
+// Horizontal and vertical offsets
+@x-0: 0;
+@x-xs: (@grid-gutter-width / 4); // 4px
+@x-sm: (@grid-gutter-width / 2); // 8px
+@x-md: @grid-gutter-width; // 16px
+@x-lg: (@grid-gutter-width * 2); // 32px
+@x-xl: (@grid-gutter-width * 4); // 64px
+
+@y-0: 0;
+@y-xs: (@line-height-computed / 4); // 4px
+@y-sm: (@line-height-computed / 2); // 8px
+@y-md: @line-height-computed; // 16px
+@y-lg: (@line-height-computed * 2); // 32px
+@y-xl: (@line-height-computed * 4); // 64px
+
+@positions: t top, r right, b bottom, l left;
+@sizes: 0, xs, sm, md, lg, xl;
+
+.axis(@i) when (mod(@i, 2) = 0) {
+  @axis: x;
+}
+
+.axis(@i) when (default()) {
+  @axis: y;
+}
+
+.prop(@property) when (@property = margin) {
+  @prop: m;
+}
+
+.prop(@property) when (@property = padding) {
+  @prop: p;
+}
+
+.rules(@prop, @pos, @sizes, @axis, @postfix, @property, @position, @i: 1) when (@i <= length(@sizes)) {
+
+  @size: extract(@sizes, @i);
+  @offset: ~"@{axis}-@{size}";
+
+  .@{prop}@{pos}-@{size}@{postfix} {
+      @{property}-@{position}: @@offset;
+  }
+
+  .rules(@prop, @pos, @sizes, @axis, @postfix, @property, @position, (@i + 1));
+}
+
+.ruleset(@positions, @property, @postfix: ~"", @i: 1) when (@i <= length(@positions)) {
+
+  @pos: extract(extract(@positions, @i), 1);
+  @position: extract(extract(@positions, @i), 2);
+
+  .axis(@i);
+  .prop(@property);
+
+  .rules(@prop, @pos, @sizes, @axis, @postfix, @property, @position);
+
+  .ruleset(@positions, @property, @postfix, (@i + 1));
+}
+
+// Margin & padding modifiers
+.ruleset(@positions, margin);
+.ruleset(@positions, padding);
+
+// Responsive margin & padding modifiers
+@media (max-width: @screen-xs-max) {
+  .ruleset(@positions, margin, -sm);
+  .ruleset(@positions, padding, -sm);
+}
+
+@media (max-width: @screen-sm-max) {
+  .ruleset(@positions, margin, -md);
+  .ruleset(@positions, padding, -md);
+}
+
+@media (max-width: @screen-md-max) {
+  .ruleset(@positions, margin, -lg);
+  .ruleset(@positions, padding, -lg);
+}
+
+// these are the device-agnostic resets and centering
+.mc {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mr-0 {
+  margin-right: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.ml-0 {
+  margin-left: 0 !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.m-all {
+  margin: 1em;
+}
+
+.p-all {
+  padding: 1em;
+}
+
+.ml-neg-md {
+  margin-left: -1em;
+}
+
+// Zera tudo!
+.pd-0 {
+  padding: 0 !important;;
+}
+
+.mg-0 {
+  margin: 0 !important;;
+}
+

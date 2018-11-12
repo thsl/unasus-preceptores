@@ -1,0 +1,104 @@
+.agenda-header {
+
+  .col-agenda-header {
+    float: left;
+    width: 11.1111%;
+    text-align: center;
+    //overflow: hidden;
+    margin: 2em 0;
+    padding: 2em 0.5em;
+    background-color: @light-gray;
+    position: relative;
+    a {
+      color: @text-color;
+      text-decoration: none;
+    }
+    &.controler {
+      background-color: transparent;
+      padding: 3em 0 0 0;
+    }
+    &.active {
+      background-color: @blue-light-one;
+      a {
+        color: @white;
+        text-decoration: none;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-left: -0.5em;
+        bottom: -1.3em;
+        left: 40%;
+        box-sizing: border-box;
+        border: 0.7em solid black;
+        border-color: transparent transparent @blue-light-one @blue-light-one;
+        transform-origin: 0 0;
+        transform: rotate(-45deg);
+        box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.3);
+      }
+      .shadown-md();
+    }
+
+    .agenda-item {
+      min-height: 5em;
+      font-family: @sec-fontfamily;
+
+      .dia {
+        font-size: @fontsize-md;
+        display: block;
+        overflow: hidden;
+        @media (max-width: @screen-sm) {
+          font-size: @fontsize-sm;
+
+        }
+      }
+      .data {
+        font-size: @fontsize-xl;
+        display: block;
+        @media (max-width: @screen-md) {
+          font-size: @fontsize-md;
+        }
+      }
+    }
+  }
+}
+
+/*customiza o datepicker*/
+.datepicker td.active:hover,
+.datepicker td.active:hover:hover,
+.datepicker td.active:focus,
+.datepicker td.active:hover:focus,
+.datepicker td.active:active,
+.datepicker td.active:hover:active,
+.datepicker td.active.active,
+.datepicker td.active:hover.active,
+.datepicker td.active.disabled,
+.datepicker td.active:hover.disabled,
+.datepicker td.active[disabled],
+.datepicker td.active:hover[disabled],
+.datepicker td span.active:hover,
+.datepicker td span.active:focus,
+.datepicker td span.active:active,
+.datepicker td span.active.active,
+.datepicker td span.active.disabled,
+.datepicker td span.active[disabled] {
+  background-color: @blue-light-one;
+  border-radius: 0;
+  background-image: none;
+}
+
+.datepicker:after, .datepicker:before {
+  //display: none;
+}
+
+.datepicker {
+  font-family: @sec-fontfamily;
+  z-index: 10;
+  &.datepicker-dropdown {
+    .datepicker-days, .datepicker-months, .datepicker-years {
+      width: 16em;
+    }
+  }
+}

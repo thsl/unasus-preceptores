@@ -1,0 +1,42 @@
+.footer-global {
+  font-size: @fontsize-sm;
+  font-family: @sec-fontfamily;
+  ul {
+    margin: 0;
+    padding: 0.5em;
+  }
+  ul li {
+    list-style-type: none;
+  }
+  ul {
+    margin-bottom: 0.5em;
+    li {
+      margin-bottom: 0.5em;
+    }
+  }
+  .footer-content {
+    padding: 2em 0;
+    background-color: #595959;
+    color: @white;
+    .site-map {
+      @media (max-width: @screen-sm) {
+        display: none;
+      }
+    }
+  }
+  a {
+    color: @white;
+    &:hover {
+      color: @white;
+    }
+  }
+  @media (max-width: @screen-sm) {
+    text-align: center;
+  }
+  .assina {
+    text-align: center;
+    background-color: #333333;
+    padding: 0.5em;
+    color: @white;
+  }
+}

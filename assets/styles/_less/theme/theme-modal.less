@@ -1,0 +1,28 @@
+.modal-open {
+
+  #wrapper {
+    filter: blur(3px) grayscale(100%);
+    transition: 0.5s;
+    overflow: hidden;
+    height: 100%;
+
+  }
+}
+
+.modal-custom {
+  .modal-content{
+   border-radius: 0;
+    border: 0;
+  }
+  .modal-header {
+    padding: 3em;
+    .close {
+      position: absolute;
+      right: 1em;
+      top: 1em;
+    }
+  }
+  .modal-body {
+    padding: 3em;
+  }
+}

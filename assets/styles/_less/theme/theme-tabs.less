@@ -1,0 +1,27 @@
+.custom-tabs {
+  .nav-tabs {
+    > li {
+      > a {
+        font-family: @sec-fontfamily;
+        text-transform: uppercase;
+        font-size: @fontsize-md;
+        font-weight: 700;
+      }
+    }
+    > li.active > a {
+      color: #555;
+      cursor: default;
+      background-color: transparent;
+      border:0;
+      border-bottom: 3px solid #555;
+    }
+  }
+  .tab-content {
+    background-color: @white;
+    padding: 2em 1em;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    border-top: 0;
+    .shadown-sm();
+  }
+}

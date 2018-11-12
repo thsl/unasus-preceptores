@@ -1,0 +1,38 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+
+}
+
+:root .navbar-theme .open.search-form .input-group {
+    width: 240px\0 !important;
+}
+
+:root .busca-desktop {
+    position: absolute\0 !important;
+}
+
+@media all and (max-width: 768px) {
+    :root .busca-desktop {
+        position: absolute\0 !important;
+        top: -416px\0 !important
+    }
+}
+
+:root .history-img .dest-image .dest-pic-cover .dest-img {
+    min-width: auto\0 !important;
+    min-height: auto\0 !important;
+    width: 100%\0 !important;
+}
+
+:root .history-main .history-img .dest-image {
+    padding-top: 60%\0 !important;
+}
+
+:root .dest-image .text-over {
+    background-color: transparent\0 !important;
+    filter: none\0;
+}
+
+:root .dest-image .text-over .text-inside-over {
+    background-color: #000\0;
+}

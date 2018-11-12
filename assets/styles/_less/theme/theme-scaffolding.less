@@ -1,0 +1,867 @@
+// coisas específicas do theme
+//
+
+// coisas genéricas
+
+.v-center {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.font-first {
+  font-family: @first-fontfamily !important;
+  &.h1, h1,
+  &.h2, h2,
+  &.h3, h3,
+  &.h4, h4,
+  &.h5, h5,
+  &.h6, h6 {
+    font-family: @first-fontfamily !important;
+  }
+}
+
+.font-second {
+  font-family: @sec-fontfamily !important;
+  &.h1, h1,
+  &.h2, h2,
+  &.h3, h3,
+  &.h4, h4,
+  &.h5, h5,
+  &.h6, h6 {
+    font-family: @sec-fontfamily !important;
+  }
+}
+
+.font-third {
+  font-family: @third-fontfamily !important;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  &.h1, h1,
+  &.h2, h2,
+  &.h3, h3,
+  &.h4, h4,
+  &.h5, h5,
+  &.h6, h6 {
+    font-family: @third-fontfamily !important;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+  }
+}
+
+// Imagens adaptativas
+.img-adaptative {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-full {
+  width: 100%;
+  height: auto !important;
+}
+
+// ---------------------------------------------------------------
+
+/* Tamanhos de Fontes */
+
+.fontsize-xs {
+  font-size: @fontsize-xs;
+}
+
+.fontsize-sm {
+  font-size: @fontsize-sm;
+}
+
+.fontsize-md {
+  font-size: @fontsize-md;
+}
+
+.fontsize-mdplus {
+  font-size: @fontsize-mdplus;
+}
+
+.fontsize-lg {
+  font-size: @fontsize-lg;
+}
+
+.fontsize-xl {
+  font-size: @fontsize-xl;
+}
+
+.fontsize-xxl {
+  font-size: @fontsize-xxl;
+}
+
+// ---------------------------------------------------------------
+
+/* Dividers */
+
+.divider-top {
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+  border-top: 1px solid rgba(211, 211, 211, 0.5);
+}
+
+.divider-right {
+  margin-right: 1.5em;
+  padding-right: 1.5em;
+  border-right: 1px solid rgba(211, 211, 211, 0.5);
+}
+
+.divider-bottom {
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+}
+
+.divider-left {
+  margin-left: 1.5em;
+  padding-left: 1.5em;
+  border-left: 1px solid rgba(211, 211, 211, 0.5);
+}
+
+// ---------------------------------------------------------------
+
+/* Cores genéricas, para div inteiras */
+
+// ---------------------------------------------------------------
+
+/* Cores genéricas, para textos */
+.text-default {
+  color: @text-color;
+  &.a {
+    color: @text-color;
+  }
+  a {
+    color: @text-color;
+  }
+}
+
+.text-white {
+  color: #fff !important;
+  &.a {
+    color: #fff !important;
+  }
+  a {
+    color: #fff !important;
+  }
+}
+
+.text-red {
+  color: @red !important;
+  &.a {
+    color: @red !important;
+  }
+  a {
+    color: @red !important;
+  }
+}
+
+.text-yellow {
+  color: @yellow !important;
+  &.a {
+    color: @yellow !important;
+  }
+  a {
+    color: @yellow !important;
+  }
+}
+
+.text-aqua {
+  color: @aqua !important;
+  &.a {
+    color: @aqua !important;
+  }
+  a {
+    color: @aqua !important;
+  }
+}
+
+.text-blue {
+  color: @blue !important;
+  &.a {
+    color: @blue !important;
+  }
+  a {
+    color: @blue !important;
+  }
+}
+
+.text-dark-blue {
+  color: @blue-two !important;
+  &.a {
+    color: @blue-two !important;
+  }
+  a {
+    color: @blue-two !important;
+  }
+}
+
+.text-black {
+  color: @text-color !important;
+  &.a {
+    color: @text-color !important;
+  }
+  a {
+    color: @text-color !important;
+  }
+}
+
+.text-light-blue {
+  color: @light-blue !important;
+  &.a {
+    color: @light-blue !important;
+  }
+  a {
+    color: @light-blue !important;
+  }
+}
+
+.text-light-blue-two {
+  color: @blue-light-two !important;
+  &.a {
+    color: @blue-light-two !important;
+  }
+  a {
+    color: @blue-light-two !important;
+  }
+}
+
+.text-green {
+  color: @green !important;
+  &.a {
+    color: @green !important;
+  }
+  a {
+    color: @green !important;
+  }
+}
+
+.text-navy {
+  color: @navy !important;
+  &.a {
+    color: @navy !important;
+  }
+  a {
+    color: @navy !important;
+  }
+}
+
+.text-teal {
+  color: @teal !important;
+  &.a {
+    color: @teal !important;
+  }
+  a {
+    color: @teal !important;
+  }
+}
+
+.text-black-teal {
+  color: @black-teal !important;
+  &.a {
+    color: @black-teal !important;
+  }
+  a {
+    color: @black-teal !important;
+  }
+}
+
+.text-olive {
+  color: @olive !important;
+  &.a {
+    color: @olive !important;
+  }
+  a {
+    color: @olive !important;
+  }
+}
+
+.text-lime {
+  color: @lime !important;
+  &.a {
+    color: @lime !important;
+  }
+  a {
+    color: @lime !important;
+  }
+}
+
+.text-orange {
+  color: @orange !important;
+  &.a {
+    color: @orange !important;
+  }
+  a {
+    color: @orange !important;
+  }
+}
+
+.text-fuchsia {
+  color: @fuchsia !important;
+  &.a {
+    color: @fuchsia !important;
+  }
+  a {
+    color: @fuchsia !important;
+  }
+}
+
+.text-purple {
+  color: @purple !important;
+  &.a {
+    color: @purple !important;
+  }
+  a {
+    color: @purple !important;
+  }
+}
+
+.text-maroon {
+  color: @maroon !important;
+  &.a {
+    color: @maroon !important;
+  }
+  a {
+    color: @maroon !important;
+  }
+}
+
+.text-light-gray {
+  color: @light-gray !important;
+  &.a {
+    color: @light-gray !important;
+  }
+  a {
+    color: @light-gray !important;
+  }
+}
+
+.text-gray {
+  color: @gray !important;
+  &.a {
+    color: @gray !important;
+  }
+  a {
+    color: @gray !important;
+  }
+}
+
+/*
+text-red
+text-yellow
+text-aqua
+text-blue
+text-black
+text-light-blue
+text-green
+text-navy
+text-teal
+text-olive
+text-lime
+text-orange
+text-fuchsia
+text-purple
+text-maroon
+*/
+
+// ---------------------------------------------------------------
+
+/* Rolagens */
+
+.rol-vert {
+  display: block;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.rol-hor {
+  display: block;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+.rol-hor-vert {
+  display: block;
+  overflow: auto;
+}
+
+.overflow-hide {
+  overflow: hidden;
+}
+
+//Força tamanhos
+
+.width-grid {
+  @force-grid-base: 4em;
+  @force-grid-gutter: 1em;
+  &-auto {
+    width: auto;
+  }
+  &-1 {
+    width: @force-grid-base;
+  }
+
+  &-2 {
+    width: 2*@force-grid-base + @force-grid-gutter;
+  }
+
+  &-3 {
+    width: 3*@force-grid-base + 2*@force-grid-gutter;
+  }
+
+  &-4 {
+    width: 4*@force-grid-base + 3*@force-grid-gutter;
+  }
+
+  &-5 {
+    width: 5*@force-grid-base + 4*@force-grid-gutter;
+  }
+
+  &-6 {
+    width: 6*@force-grid-base + 5*@force-grid-gutter;
+  }
+
+  &-7 {
+    width: 7*@force-grid-base + 6*@force-grid-gutter;
+  }
+
+  &-8 {
+    width: 8*@force-grid-base + 7*@force-grid-gutter;
+  }
+
+  &-9 {
+    width: 9*@force-grid-base + 8*@force-grid-gutter;
+  }
+
+  &-10 {
+    width: 10*@force-grid-base + 9*@force-grid-gutter;
+  }
+
+  &-11 {
+    width: 11*@force-grid-base + 10*@force-grid-gutter;
+  }
+
+  &-12 {
+    width: 12*@force-grid-base + 11*@force-grid-gutter;
+  }
+}
+
+.height-grid {
+  @force-grid-base: 4em;
+  @force-grid-gutter: 1em;
+  &-auto {
+    height: auto;
+  }
+  &-1 {
+    height: @force-grid-base;
+  }
+
+  &-2 {
+    height: 2*@force-grid-base + @force-grid-gutter;
+  }
+
+  &-3 {
+    height: 3*@force-grid-base + 2*@force-grid-gutter;
+  }
+
+  &-4 {
+    height: 4*@force-grid-base + 3*@force-grid-gutter;
+  }
+
+  &-5 {
+    height: 5*@force-grid-base + 4*@force-grid-gutter;
+  }
+
+  &-6 {
+    height: 6*@force-grid-base + 5*@force-grid-gutter;
+  }
+
+  &-7 {
+    height: 7*@force-grid-base + 6*@force-grid-gutter;
+  }
+
+  &-8 {
+    height: 8*@force-grid-base + 7*@force-grid-gutter;
+  }
+
+  &-9 {
+    height: 9*@force-grid-base + 8*@force-grid-gutter;
+  }
+
+  &-10 {
+    height: 10*@force-grid-base + 9*@force-grid-gutter;
+  }
+
+  &-11 {
+    height: 11*@force-grid-base + 10*@force-grid-gutter;
+  }
+
+  &-12 {
+    height: 12*@force-grid-base + 11*@force-grid-gutter;
+  }
+}
+
+// ---------------------------------------------------------------
+//Cursores
+.cursor-default {
+  &:hover {
+    cursor: default;
+  }
+}
+
+.cursor-pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.cursor-help {
+  &:hover {
+    cursor: help;
+  }
+}
+
+.cursor-text {
+  &:hover {
+    cursor: text;
+  }
+}
+
+.cursor-move {
+  &:hover {
+    cursor: move;
+  }
+}
+
+.cursor-wait {
+  &:hover {
+    cursor: wait;
+  }
+}
+
+.cursor-progress {
+  &:hover {
+    cursor: progress;
+  }
+}
+
+.cursor-crosshair {
+  &:hover {
+    cursor: crosshair;
+  }
+}
+
+// positions
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-fixed {
+  position: fixed;
+}
+
+input[type=checkbox], input[type=radio] {
+  margin: 0;
+  line-height: normal;
+}
+
+.checkbox label, .radio label {
+  margin-bottom: 0;
+  font-weight: 200;
+}
+
+.text-shadowned {
+  text-shadow: 0 0.125em 0.375em rgba(0, 0, 0, 0.86);
+}
+
+// força os tamanhos
+.full-sizes {
+  width: 100%;
+  height: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.half-height {
+  height: 50%;
+}
+
+// pesos
+
+.font-thin {
+  font-weight: 100 !important;;
+}
+
+.font-regular {
+  font-weight: normal !important;;
+}
+
+.font-bold {
+  font-weight: 700 !important;
+}
+
+// links
+.link-nodecoration {
+  text-decoration: none !important;
+  + a {
+    text-decoration: none !important;
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+}
+
+.rouded-image-md {
+  position: relative;
+  width: 8em;
+  height: 8em;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  .shadown-sm();
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.rouded-image-sm {
+  position: relative;
+  width: 5em;
+  height: 5em;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  .shadown-sm();
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.rouded-image-xs {
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  .shadown-sm();
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// cores para os backgrounds genéricos //
+
+/* Cores genéricas, para textos */
+.back-dark {
+  background-color: @text-color;
+}
+
+.back-white {
+  background-color: #fff !important;
+}
+
+.back-red {
+  background-color: @red !important;
+
+}
+
+.back-yellow {
+  background-color: @yellow !important;
+
+}
+
+.back-aqua {
+  background-color: @aqua !important;
+
+}
+
+.back-blue {
+  background-color: @blue !important;
+
+}
+
+.back-dark-blue {
+  background-color: @blue-two !important;
+
+}
+
+.back-black {
+  background-color: @black !important;
+
+}
+
+.back-light-blue {
+  background-color: @blue-light-one !important;
+
+}
+
+.back-light-blue-two {
+  background-color: @blue-light-two !important;
+
+}
+
+.back-green {
+  background-color: @green !important;
+
+}
+
+.back-navy {
+  background-color: @navy !important;
+
+}
+
+.back-teal {
+  background-color: @teal !important;
+
+}
+
+.back-black-teal {
+  background-color: @black-teal !important;
+
+}
+
+.back-olive {
+  background-color: @olive !important;
+
+}
+
+.back-lime {
+  background-color: @lime !important;
+
+}
+
+.back-orange {
+  background-color: @orange !important;
+
+}
+
+.back-fuchsia {
+  background-color: @fuchsia !important;
+
+}
+
+.back-purple {
+  background-color: @purple !important;
+
+}
+
+.back-maroon {
+  background-color: @maroon !important;
+
+}
+
+.back-light-gray {
+  background-color: @light-gray !important;
+
+}
+
+.back-gray {
+  background-color: @gray !important;
+}
+
+// recortes
+
+.clip-left-sm {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(95% - 5vw));
+}
+
+.clip-right-sm {
+  clip-path: polygon(0 0, 100% 0, 100% calc(95% - 5vw), 0 100%);
+}
+
+.clip-top-right-sm {
+  clip-path: polygon(0% 0%, 100% calc(10% - 5vw), 100% 100%, 0% 100%);
+}
+
+.clip-top-left-sm {
+  clip-path: polygon(0% calc(10% - 5vw), 100% 0, 100% 100%, 0% 100%);
+}
+
+.grafico-md {
+  max-width: 23em;
+  width: 100%;
+}
+
+.spacer-sm {
+  margin: 1em 0;
+  padding: 1em 0;
+}
+
+.spacer-md {
+  margin: 3em 0;
+  padding: 3em 0;
+}
+
+.spacer-lg {
+  margin: 5em 0;
+  padding: 5em 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hidden-xs {
+  @media (max-width: @screen-xs) {
+    display: none !important;
+  }
+}
+
+.hidden-sm {
+  @media (max-width: @screen-sm) {
+    display: none !important;
+  }
+}
+
+.hidden-md {
+  @media (max-width: @screen-md) {
+    display: none !important;
+  }
+}
+
+.hidden-lg {
+  @media (max-width: @screen-lg) {
+    display: none !important;
+  }
+}
+
+.search-mark {
+  background-color: #ffcf82;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.diamond {
+  position: relative;
+  height: 5em;
+  width: 5em;
+
+  text-align: center;
+  margin: 0 auto;
+  &:before {
+    position: absolute;
+    content: '';
+    top: -35%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: rotateX(45deg) rotateZ(45deg);
+    border: 1px solid @text-color;
+  }
+}

@@ -1,0 +1,25 @@
+html, body {
+  height: 100%;
+  min-height: 100%;
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: @first-fontfamily;
+  line-height: @line-height-base;
+  color: @text-color;
+  font-weight: normal;
+  font-size: @font-size-base;
+  @media (max-width: @screen-md) {
+    font-size: 95%;
+  }
+  @media (max-width: @screen-sm) {
+    font-size: 93%;
+  }
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
