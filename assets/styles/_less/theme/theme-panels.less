@@ -18,14 +18,25 @@
   }
 }
 
-.panel-group{
-  .panel{
+.panel-group {
+  .panel {
     border: none;
     //border-bottom: 1px solid @gray;
     box-shadow: none;
     border-radius: 0;
   }
-  .panel-title{
+  .panel-title {
     font-family: @sec-fontfamily;
   }
 }
+
+.box-base {
+  background-color: @white;
+  &.box-shadowened {
+    .shadown-md();
+  }
+  &.box-radio-sm{
+    border-radius: 8px;
+  }
+}
+
