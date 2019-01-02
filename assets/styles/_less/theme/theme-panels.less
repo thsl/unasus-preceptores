@@ -1,8 +1,39 @@
 .panel-box-one {
-  .shadown-sm();
+  border: 0;
+  .shadown-md();
+  overflow: hidden;
   border-radius: @border-radius-sm;
   .panelbody-p-0 {
     padding: 0 !important;
+  }
+  .dest-image {
+    height: 100%;
+  }
+  .row {
+    display: table;
+  }
+
+  [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+    @media (max-width: @screen-sm) {
+      float: left;
+    }
+  }
+  .destimg-box-one {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @media (max-width: @screen-sm) {
+      display: none;
+    }
+  }
+  .panel-footer{
+    background-color:@gray-dark;
+    color: @white;
+    border: 0;
+    font-size: @fontsize-xs;
   }
 }
 
@@ -23,7 +54,7 @@
   &.box-shadowened {
     .shadown-md();
   }
-  &.box-radio-sm{
+  &.box-radio-sm {
     border-radius: 8px;
   }
 }
