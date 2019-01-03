@@ -1,6 +1,9 @@
 .panel-box-one {
   border: 0;
   .shadown-md();
+  &:hover {
+    .shadown-lg();
+  }
   overflow: hidden;
   border-radius: @border-radius-sm;
   .panelbody-p-0 {
@@ -29,11 +32,28 @@
       display: none;
     }
   }
-  .panel-footer{
-    background-color:@gray-dark;
+  .panel-footer {
+    background-color: @gray-dark;
     color: @white;
     border: 0;
     font-size: @fontsize-xs;
+  }
+  &.finished-success {
+    position: relative;
+    border: 1px solid @teal;
+    &::before {
+      content: "";
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url("@{image-path-theme}/estrutura/top-rig-green.png") no-repeat top right transparent;
+      background-size: contain;
+    }
+    .panel-footer {
+      background-color: @teal;
+    }
   }
 }
 

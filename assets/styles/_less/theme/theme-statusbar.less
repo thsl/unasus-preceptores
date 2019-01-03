@@ -1,0 +1,43 @@
+.formacao-status {
+  .tooltip {
+    position: relative;
+    float: right;
+    right: -20px !important;
+    font-weight: 700;
+    font-family: @sec-fontfamily;
+    filter: drop-shadow(rgba(0, 0, 0, 0.4) 0px 4px 3px);
+
+  }
+
+  .tooltip.in {
+    opacity: 1;
+  }
+  .progress {
+    overflow: visible;
+    background-color: #AFAFAF;
+    border-radius: 0;
+  }
+  .progress-bar {
+    -webkit-transition: width 1.5s ease-in-out;
+    transition: width 1.5s ease-in-out;
+  }
+  .progress-bar-warning {
+    .tooltip.top .tooltip-arrow {
+      border-top-color: @yellow;
+    }
+    .tooltip {
+      font-weight: 700;
+      font-family: @sec-fontfamily;
+      filter: drop-shadow(rgba(0, 0, 0, 0.4) 0px 4px 3px);
+      .tooltip-inner {
+        background-color: @yellow;
+        color: @blue-two;
+      }
+    }
+    .tooltip-inner {
+      background-color: @yellow;
+      color: @blue-two;
+    }
+
+  }
+}

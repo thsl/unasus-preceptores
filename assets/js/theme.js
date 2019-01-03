@@ -1,8 +1,6 @@
 // menu superior
 
 
-
-
 (function ($) {
     $(document).ready(function () {
         $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function (event) {
@@ -24,7 +22,10 @@ $(function () {
 });
 // inicia os tooltips
 $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip();
+    //$('#statusbar-formacao').tooltip('show');
+    $('[data-toggle="tooltip"]').tooltip({trigger: 'manual'}).tooltip('show');
+
 });
 
 
