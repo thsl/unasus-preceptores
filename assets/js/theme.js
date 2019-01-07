@@ -22,9 +22,9 @@ $(function () {
 });
 // inicia os tooltips
 $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-    //$('#statusbar-formacao').tooltip('show');
-    $('[data-toggle="tooltip"]').tooltip({trigger: 'manual'}).tooltip('show');
+    //$('[data-toggle="tooltip"]').tooltip();
+    $('.tooltip-show').tooltip({trigger: 'manual'}).tooltip('show');
+    //$('[data-toggle="tooltip"]').tooltip({trigger: 'manual'}).tooltip('show');
 
 });
 
