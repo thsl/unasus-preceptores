@@ -9,8 +9,10 @@
 }
 
 .formacao-status {
-
-
+  .tooltip{
+    position:relative;
+    float:right;
+  }
   .tooltip.in {
     opacity: 1;
   }
@@ -25,7 +27,9 @@
     transition: width 1.5s ease-in-out;
     position: absolute;
     left: 0;
+    text-align: right;
   }
+
   .progress-bar-blue {
     background-color: @blue-darken-one;
     .tooltip.top .tooltip-arrow {
@@ -50,6 +54,5 @@
       background-color: @yellow;
       color: @blue-two;
     }
-
   }
 }
