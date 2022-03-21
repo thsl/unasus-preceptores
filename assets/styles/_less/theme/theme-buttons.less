@@ -1,10 +1,10 @@
 .btn, button {
-  font-family: @sec-fontfamily;
-  padding: 1em 3em;
+ 
   font-weight: 700;
   border: 1px solid transparent;
   font-size: @fontsize-sm;
 }
+
 
 .btn-default {
   border: 1px solid #ccc;
@@ -18,7 +18,8 @@
 .btn-success {
   background-color: @black-teal;
   border: @teal;
-  &:hover, &:active, &:active:focus, &:focus{
+
+  &:hover, &:active, &:active:focus, &:focus {
     background-color: @teal;
   }
 }
@@ -37,6 +38,9 @@
 .btn-danger {
   background-color: @red;
 }
+
+// botoes dos temas
+
 
 .btn-round {
   border-radius: 2em;
@@ -88,7 +92,8 @@
 .btn {
   &.outline {
     background: none !important;
-    //padding: 1em 1.5em;
+    border: 2px solid;
+    padding: 0.74em 16px;
   }
 }
 
@@ -98,6 +103,7 @@
     color: @white;
     box-shadow: none;
   }
+
   &.outline:hover,
   &.outline:focus,
   &.outline:active,
@@ -114,6 +120,7 @@
     color: @blue;
     box-shadow: none;
   }
+
   &.outline:hover,
   &.outline:focus,
   &.outline:active,
@@ -126,10 +133,11 @@
 
 .btn-default {
   &.outline {
-    border: 2px solid @gray;
-    color: @gray;
+    border: 2px solid @gray-light;
+    color: @gray-light;
     box-shadow: none;
   }
+
   &.outline:hover,
   &.outline:focus,
   &.outline:active,
@@ -142,16 +150,17 @@
 
 .btn-success {
   &.outline {
-    border: 2px solid @light-green-two;
-    color: @light-green-two;
+    border: 2px solid @green;
+    color: @green;
     box-shadow: none;
   }
+
   &.outline:hover,
   &.outline:focus,
   &.outline:active,
   &.outline.active {
-    border-color: darken(@light-green-two, 12%);
-    color: darken(@light-green-two, 12%);
+    border-color: darken(@green, 12%);
+    color: darken(@green, 12%);
     box-shadow: none;
   }
 }
@@ -162,6 +171,7 @@
     color: @light-blue;
     box-shadow: none;
   }
+
   &.outline:hover,
   &.outline:focus,
   &.outline:active,
@@ -178,6 +188,7 @@
     color: @orange;
     box-shadow: none;
   }
+
   &.outline:hover,
   &.outline:focus,
   &.outline:active,
@@ -194,6 +205,7 @@
     color: @red;
     box-shadow: none;
   }
+
   &.outline:hover,
   &.outline:focus,
   &.outline:active,
@@ -202,4 +214,10 @@
     color: darken(@red, 12%);
     box-shadow: none;
   }
+}
+
+
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn{
+  color: @gray-light;
 }

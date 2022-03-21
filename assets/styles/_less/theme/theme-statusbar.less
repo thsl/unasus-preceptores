@@ -1,58 +1,25 @@
-.tooltip-inner {
-  border-radius: 0;
-}
-
-.tooltip {
-  font-weight: 700;
-  font-family: @sec-fontfamily;
-  filter: drop-shadow(rgba(0, 0, 0, 0.4) 0px 4px 3px);
-}
-
-.formacao-status {
-  .tooltip{
-    position:relative;
-    float:right;
-  }
-  .tooltip.in {
-    opacity: 1;
-  }
-  .progress {
+.theme-progressbar {
+  &.progress {
     overflow: visible;
     background-color: #AFAFAF;
-    border-radius: 0;
+    border-radius: 3em;
     position: relative;
-  }
-  .progress-bar {
-    -webkit-transition: width 1.5s ease-in-out;
-    transition: width 1.5s ease-in-out;
-    position: absolute;
-    left: 0;
-    text-align: right;
-  }
+    margin: 0;
 
-  .progress-bar-blue {
-    background-color: @blue-darken-one;
-    .tooltip.top .tooltip-arrow {
-      border-top-color: @blue-darken-one;
+    .progress-bar {
+      -webkit-transition: width 1.5s ease-in-out;
+      transition: width 1.5s ease-in-out;
+      position: absolute;
+      left: 0;
+      text-align: right;
+      border-radius: 3em;
     }
-
-    .tooltip-inner {
-      background-color: @blue-darken-one;
-      color: @white;
-    }
-  }
-
-  .progress-bar-warning {
-    background-color: @yellow;
-    .tooltip.top .tooltip-arrow {
-      border-top-color: @yellow;
-    }
-    .tooltip.bottom .tooltip-arrow {
-      border-bottom-color: @yellow;
-    }
-    .tooltip-inner {
-      background-color: @yellow;
-      color: @blue-two;
+    .progress-bar-success{
+      background-color: @green;
     }
   }
+}
+
+.progress-sm{
+  height: 1em;
 }

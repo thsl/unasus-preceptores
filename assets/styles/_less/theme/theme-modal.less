@@ -1,6 +1,6 @@
 .modal-open {
 
-  #wrapper {
+  .wrapper {
     filter: blur(3px) grayscale(100%);
     transition: 0.5s;
     overflow: hidden;
@@ -10,19 +10,123 @@
 }
 
 .modal-custom {
-  .modal-content{
-   border-radius: 0;
+  .modal-content {
+    border-radius: 0;
     border: 0;
   }
+
   .modal-header {
     padding: 3em;
+
     .close {
       position: absolute;
       right: 1em;
       top: 1em;
     }
   }
+
   .modal-body {
     padding: 3em;
   }
+}
+
+.modal-with-sidebar {
+  .modal-dialog {
+
+  }
+
+  .modal-conteudo {
+    @media (max-width: @screen-sm) {
+      margin-top: 3em;
+    }
+  }
+
+  .modal-body {
+    max-height: calc(100vh - 140px);
+  }
+
+  .modal-conteudo {
+    overflow-y: auto;
+    min-height: 100%;
+    padding: 0 3rem 0 0;
+    max-height: calc(100vh - 180px);
+    @media (max-width: @screen-sm) {
+      max-height: calc(100vh - 250px);
+      padding: 0 3rem 3rem 2rem;
+    }
+  }
+
+  .nav-modal {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    @media (max-width: @screen-sm) {
+      overflow: visible;
+    }
+
+    .navbar-nav > li > a {
+      color: @blue;
+    }
+
+    .navbar-nav {
+      @media (max-width: @screen-sm) {
+        overflow-y: auto;
+        max-height: calc(100vh - 270px);
+      }
+    }
+
+    .navbar-header {
+      background-color: @light-gray;
+    }
+
+    background-color: transparent;
+    border: 0;
+    position: relative;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    height: 100vh;
+    overflow: auto;
+    @media (max-width: @screen-sm) {
+      .shadown-sm();
+      position: absolute;
+      width: 100%;
+      top: -16px;
+      height: auto;
+    }
+
+    @media (max-width: @screen-sm) {
+      width: 100%;
+      background-color: @white;
+      z-index: 1;
+    }
+
+    .navbar-nav {
+      float: none;
+      display: block;
+
+      @media (max-width: @screen-sm) {
+        margin: 0;
+      }
+    }
+
+    .navbar-nav > li {
+      float: none;
+      display: block;
+    }
+
+    .navbar-collapse {
+      padding: 0;
+    }
+
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+
+.modal-lg {
+  width: 80%;
+  max-width: 940px;
+  margin: 32px auto;
 }

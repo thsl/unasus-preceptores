@@ -1,5 +1,5 @@
 .navbar-theme {
-  font-family: @sec-fontfamily;
+
   position: relative;
   border: 0;
   margin-bottom: 0;
@@ -722,6 +722,11 @@
     border-radius: 0;
     background-color: transparent;
     font-size: @fontsize-sm;
+    width: auto;
+    max-width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     li {
       line-height: 20px;
       a {
@@ -731,12 +736,17 @@
     @media (max-width: @screen-sm) {
       float: none;
       margin-bottom: 20px;
+      max-width: 100%;
+      white-space: normal;
     }
   }
 }
 
 // Faz o menu virar sidebar á direita
 .navbar-theme {
+  &.navbar-default{
+    background-color: @white;
+  }
   .navbar-collapse.collapse-right {
     @media (max-width: @screen-sm) {
       //background: url("@{image-path-theme}/estrutura/bck-senado.png") no-repeat top right @white;
@@ -749,9 +759,7 @@
       display: block;
       border: 0;
       background-color: @white;
-      -webkit-box-shadow: -8px 0px 18px -2px rgba(0, 0, 0, 0.23);
-      -moz-box-shadow: -8px 0px 18px -2px rgba(0, 0, 0, 0.23);
-      box-shadow: -8px 0px 18px -2px rgba(0, 0, 0, 0.23);
+
       // Force hardware acceleration in webkit
       -webkit-transform: translate3d(0, 0, 0);
 
@@ -782,6 +790,9 @@
         -moz-transform: translateX(0%);
         -ms-transform: translateX(0%);
         transform: translateX(0%);
+        -webkit-box-shadow: -8px 0px 18px -2px rgba(0, 0, 0, 0.23);
+        -moz-box-shadow: -8px 0px 18px -2px rgba(0, 0, 0, 0.23);
+        box-shadow: -8px 0px 18px -2px rgba(0, 0, 0, 0.23);
       }
 
       &.collapse {

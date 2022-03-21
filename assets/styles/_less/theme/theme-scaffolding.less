@@ -11,6 +11,7 @@
 
 .font-first {
   font-family: @first-fontfamily !important;
+
   &.h1, h1,
   &.h2, h2,
   &.h3, h3,
@@ -23,6 +24,7 @@
 
 .font-second {
   font-family: @sec-fontfamily !important;
+
   &.h1, h1,
   &.h2, h2,
   &.h3, h3,
@@ -30,22 +32,6 @@
   &.h5, h5,
   &.h6, h6 {
     font-family: @sec-fontfamily !important;
-  }
-}
-
-.font-third {
-  font-family: @third-fontfamily !important;
-  font-weight: 100;
-  letter-spacing: 0.01em;
-  &.h1, h1,
-  &.h2, h2,
-  &.h3, h3,
-  &.h4, h4,
-  &.h5, h5,
-  &.h6, h6 {
-    font-family: @third-fontfamily !important;
-    font-weight: 100;
-    letter-spacing: 0.01em;
   }
 }
 
@@ -97,27 +83,19 @@
 /* Dividers */
 
 .divider-top {
-  margin-top: 1.5em;
-  padding-top: 1.5em;
-  border-top: 1px solid rgba(171, 171, 171, 0.5);
+  border-top: 1px solid @light-gray-base-two;
 }
 
 .divider-right {
-  margin-right: 1.5em;
-  padding-right: 1.5em;
-  border-right: 1px solid rgba(171, 171, 171, 0.5);
+  border-right: 1px solid @light-gray-base-two;
 }
 
 .divider-bottom {
-  margin-bottom: 1.5em;
-  padding-bottom: 1.5em;
-  border-bottom: 1px solid rgba(171, 171, 171, 0.5);
+  border-bottom: 1px solid @light-gray-base-two;
 }
 
 .divider-left {
-  margin-left: 1.5em;
-  padding-left: 1.5em;
-  border-left: 1px solid rgba(171, 171, 171, 0.5);
+  border-left: 1px solid @light-gray-base-two;
 }
 
 // ---------------------------------------------------------------
@@ -129,9 +107,11 @@
 /* Cores genéricas, para textos */
 .text-default {
   color: @text-color;
+
   &.a {
     color: @text-color;
   }
+
   a {
     color: @text-color;
   }
@@ -139,9 +119,11 @@
 
 .text-white {
   color: #fff !important;
+
   &.a {
     color: #fff !important;
   }
+
   a {
     color: #fff !important;
   }
@@ -149,9 +131,11 @@
 
 .text-red {
   color: @red !important;
+
   &.a {
     color: @red !important;
   }
+
   a {
     color: @red !important;
   }
@@ -159,9 +143,11 @@
 
 .text-yellow {
   color: @yellow !important;
+
   &.a {
     color: @yellow !important;
   }
+
   a {
     color: @yellow !important;
   }
@@ -169,9 +155,11 @@
 
 .text-aqua {
   color: @aqua !important;
+
   &.a {
     color: @aqua !important;
   }
+
   a {
     color: @aqua !important;
   }
@@ -179,9 +167,11 @@
 
 .text-blue {
   color: @blue !important;
+
   &.a {
     color: @blue !important;
   }
+
   a {
     color: @blue !important;
   }
@@ -189,9 +179,11 @@
 
 .text-dark-blue {
   color: @blue-two !important;
+
   &.a {
     color: @blue-two !important;
   }
+
   a {
     color: @blue-two !important;
   }
@@ -199,9 +191,11 @@
 
 .text-black {
   color: @text-color !important;
+
   &.a {
     color: @text-color !important;
   }
+
   a {
     color: @text-color !important;
   }
@@ -209,9 +203,11 @@
 
 .text-light-blue {
   color: @light-blue !important;
+
   &.a {
     color: @light-blue !important;
   }
+
   a {
     color: @light-blue !important;
   }
@@ -219,9 +215,11 @@
 
 .text-light-blue-two {
   color: @blue-light-two !important;
+
   &.a {
     color: @blue-light-two !important;
   }
+
   a {
     color: @blue-light-two !important;
   }
@@ -229,9 +227,11 @@
 
 .text-green {
   color: @green !important;
+
   &.a {
     color: @green !important;
   }
+
   a {
     color: @green !important;
   }
@@ -239,9 +239,11 @@
 
 .text-navy {
   color: @navy !important;
+
   &.a {
     color: @navy !important;
   }
+
   a {
     color: @navy !important;
   }
@@ -249,9 +251,11 @@
 
 .text-teal {
   color: @teal !important;
+
   &.a {
     color: @teal !important;
   }
+
   a {
     color: @teal !important;
   }
@@ -259,9 +263,11 @@
 
 .text-black-teal {
   color: @black-teal !important;
+
   &.a {
     color: @black-teal !important;
   }
+
   a {
     color: @black-teal !important;
   }
@@ -269,9 +275,11 @@
 
 .text-olive {
   color: @olive !important;
+
   &.a {
     color: @olive !important;
   }
+
   a {
     color: @olive !important;
   }
@@ -279,9 +287,11 @@
 
 .text-lime {
   color: @lime !important;
+
   &.a {
     color: @lime !important;
   }
+
   a {
     color: @lime !important;
   }
@@ -289,9 +299,11 @@
 
 .text-orange {
   color: @orange !important;
+
   &.a {
     color: @orange !important;
   }
+
   a {
     color: @orange !important;
   }
@@ -299,9 +311,11 @@
 
 .text-fuchsia {
   color: @fuchsia !important;
+
   &.a {
     color: @fuchsia !important;
   }
+
   a {
     color: @fuchsia !important;
   }
@@ -309,9 +323,11 @@
 
 .text-purple {
   color: @purple !important;
+
   &.a {
     color: @purple !important;
   }
+
   a {
     color: @purple !important;
   }
@@ -319,9 +335,11 @@
 
 .text-maroon {
   color: @maroon !important;
+
   &.a {
     color: @maroon !important;
   }
+
   a {
     color: @maroon !important;
   }
@@ -329,9 +347,11 @@
 
 .text-light-gray {
   color: @light-gray !important;
+
   &.a {
     color: @light-gray !important;
   }
+
   a {
     color: @light-gray !important;
   }
@@ -339,9 +359,11 @@
 
 .text-gray {
   color: @gray !important;
+
   &.a {
     color: @gray !important;
   }
+
   a {
     color: @gray !important;
   }
@@ -395,9 +417,11 @@ text-maroon
 .width-grid {
   @force-grid-base: 4em;
   @force-grid-gutter: 1em;
+
   &-auto {
     width: auto;
   }
+
   &-1 {
     width: @force-grid-base;
   }
@@ -448,11 +472,12 @@ text-maroon
 }
 
 .height-grid {
-  @force-grid-base: 4em;
-  @force-grid-gutter: 1em;
+
+
   &-auto {
     height: auto;
   }
+
   &-1 {
     height: @force-grid-base;
   }
@@ -610,8 +635,10 @@ input[type=checkbox], input[type=radio] {
 // links
 .link-nodecoration {
   text-decoration: none !important;
+
   + a {
     text-decoration: none !important;
+
     &:hover {
       text-decoration: none !important;
     }
@@ -626,6 +653,7 @@ input[type=checkbox], input[type=radio] {
   border-radius: 50%;
   border: 1px solid #ddd;
   .shadown-sm();
+
   img {
     width: 100%;
     height: auto;
@@ -640,6 +668,7 @@ input[type=checkbox], input[type=radio] {
   border-radius: 50%;
   border: 1px solid #ddd;
   .shadown-sm();
+
   img {
     width: 100%;
     height: auto;
@@ -654,6 +683,7 @@ input[type=checkbox], input[type=radio] {
   border-radius: 50%;
   border: 1px solid #ddd;
   .shadown-sm();
+
   img {
     width: 100%;
     height: auto;
@@ -662,13 +692,13 @@ input[type=checkbox], input[type=radio] {
 
 // cores para os backgrounds genéricos //
 
-/* Cores genéricas, para textos */
+/* Cores genéricas, para backgrounds */
 .back-dark {
   background-color: @text-color;
 }
 
 .back-white {
-  background-color: #fff !important;
+  background-color: @white !important;
 }
 
 .back-red {
@@ -732,7 +762,7 @@ input[type=checkbox], input[type=radio] {
 }
 
 .back-olive {
-  background-color: @olive !important;
+  background-color: @olive !important
 
 }
 
@@ -768,6 +798,13 @@ input[type=checkbox], input[type=radio] {
 
 .back-gray {
   background-color: @gray !important;
+}
+
+// Backgrounds em gradientes
+
+.gradiente01 {
+  /* Degrade01 */
+  background-color: linear-gradient(91.69deg, #367297 0%, #5ECDE8 100%);
 }
 
 // recortes
@@ -854,6 +891,7 @@ input[type=checkbox], input[type=radio] {
 
   text-align: center;
   margin: 0 auto;
+
   &:before {
     position: absolute;
     content: '';
@@ -864,4 +902,110 @@ input[type=checkbox], input[type=radio] {
     transform: rotateX(45deg) rotateZ(45deg);
     border: 1px solid @text-color;
   }
+}
+
+// Area temática 1 (e seus cursos)
+.bck-tema-1 {
+  background: url('../../../assets/img/backgrounds/tema-1.jpg') no-repeat top left @blue;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: @white !important;
+}
+
+.bck-tema-1-curso-1 {
+  .cores-temas-cursos(@areatematica-1-curso-1);
+}
+
+.bck-tema-1-curso-2 {
+  .cores-temas-cursos(@areatematica-1-curso-2);
+}
+
+.bck-tema-1-curso-3 {
+  .cores-temas-cursos(@areatematica-1-curso-3);
+}
+
+.bck-tema-1-curso-4 {
+  .cores-temas-cursos(@areatematica-1-curso-4);
+}
+
+.bck-tema-1-curso-5 {
+  .cores-temas-cursos(@areatematica-1-curso-5);
+}
+
+.bck-tema-1-curso-6 {
+  .cores-temas-cursos(@areatematica-1-curso-6);
+}
+
+// Area temática 2 (e seus cursos)
+.bck-tema-2 {
+  .cores-temas(@areatematica-2);
+  background-color: @areatematica-2 !important;
+}
+
+// Area temática 3 (e seus cursos)
+.bck-tema-3 {
+  .cores-temas(@areatematica-3);
+  background-color: @areatematica-3 !important;
+}
+
+.bck-tema-4 {
+  .cores-temas(@areatematica-4);
+  background-color: @areatematica-4 !important;
+}
+
+.bck-tema-5 {
+  .cores-temas(@areatematica-5);
+  background-color: @areatematica-5 !important;
+
+}
+
+.bck-tema-6 {
+  .cores-temas(@areatematica-6);
+  background-color: @areatematica-6 !important;
+
+}
+
+.bck-tema-7 {
+  .cores-temas(@areatematica-7);
+  background-color: @areatematica-7 !important;
+
+}
+
+.bck-tema-8 {
+  .cores-temas(@areatematica-8);
+  background-color: @areatematica-8 !important;
+
+}
+
+.bck-tema-9 {
+  .cores-temas(@areatematica-9);
+  background-color: @areatematica-9 !important;
+
+}
+
+
+.bck-tema-white {
+  background-color: @white;
+  color: @text-color;
+}
+
+.bck-tema-gray {
+  background-color: @gray-light;
+  color: @white;
+}
+
+.texture-temas {
+  .texture-temas();
+}
+
+.shadown-sm {
+  .shadown-sm();
+}
+
+.shadown-md {
+  .shadown-md();
+}
+
+.shadown-lg {
+  .shadown-lg();
 }
