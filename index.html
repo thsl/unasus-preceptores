@@ -1,360 +1,572 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-        <meta name="description" content="Câmara dos Deputados do Brasil">
-        <meta name="keywords" content="Câmara dos Deputados do Brasil">
-        <meta name="application-name" content="Câmara dos Deputados do Brasil">
-        <meta name="author" content="Thiago - thslopes.com.br">
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/logos/favicon.png">
-        <title>Programa de formação de preceptores na perspectiva da utilização dos COAPES</title>
-        <link href="assets/styles/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/styles/css/animate.min.css" rel="stylesheet">
-        <link href="assets/styles/css/themify-icons.css" rel="stylesheet">
-        <link href="assets/styles/css/bootstrap-dropdownhover.min.css" rel="stylesheet">
-        <link href="assets/styles/css/theme.css" rel="stylesheet">
-        <link href="assets/styles/css/ie.css" rel="stylesheet">
-        
-        <!--[if IE]>
-        <script src="assets/js/html5shiv.min.js"></script>
-        <![endif]-->
-    
-    </head>
-    <body>
-        <!-- início da navegação principal -->
-        <a href="#conteudo" class="hidden">Ir para o conteúdo</a>
-        <nav class="navbar navbar-theme white-theme navbar-default navbar-fixed-top">
-            
-            <div class="navbar-header">
-                <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle fechanavbr">
-                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                </button>
-            
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="description"
+          content="Programa de Formação Modular de Preceptores na perspectiva da utilização do COAPES">
+    <meta name="keywords" content="Programa de Formação Modular de Preceptores na perspectiva da utilização do COAPES">
+    <meta name="application-name"
+          content="Programa de Formação Modular de Preceptores na perspectiva da utilização do COAPES">
+    <meta name="author" content="Thiago - thslopes.com.br">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logos/favicon.png">
+    <title>Programa de Formação Modular de Preceptores na perspectiva da utilização do COAPES</title>
+    <link href="assets/styles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/styles/css/animate.min.css" rel="stylesheet">
+    <link href="assets/styles/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/styles/css/unicons.css" rel="stylesheet">
+    <link href="assets/styles/css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+    <link href="assets/styles/css/theme.css" rel="stylesheet">
+    <link href="assets/styles/css/ie.css" rel="stylesheet">
+
+    <!--[if IE]>
+    <script src="assets/js/html5shiv.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<!-- início da navegação principal -->
+<div class="navbar navbar-theme white-theme navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1"
+                    class="navbar-toggle fechanavbr">
+                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+
+        </div>
+
+        <div id="navbar-collapse-1" class="navbar-collapse collapse collapse-right">
+            <a href="javascript:void(0)" class="close-collapsenavbar fechanavbr" data-toggle="collapse"
+               data-target="#navbar-collapse-1"><span class="ti-close"></span></a>
+
+            <div class="navigation-main">
+
+                <ol class="breadcrumb breadcrumb-header">
+                    <li><a href="#">Página inicial</a></li>
+                    <!--<li><a href="#">Library</a></li>
+                    <li class="active">Data</li>-->
+                </ol>
+                <!-- Tornar hover de novo: <ul class="nav navbar-nav navigation-theme" data-hover="dropdown" data-animations="none">-->
+                <ul class="nav navbar-nav navigation-theme navbar-right" data-hover="dropdown"
+                    data-animations="none">
+                    <li class="menu-item">
+                        <a href="#modal-progresso" class="menu-item-principal has-budget-alert" data-toggle="modal"
+                           data-target="#modal-progresso">Seu progresso</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#modal-guiaaluno" class="menu-item-principal" data-toggle="modal"
+                           data-target="#modal-guiaaluno">Guia do aluno</a>
+                    </li>
+                </ul>
+
             </div>
-            
-            <div id="navbar-collapse-1" class="navbar-collapse collapse collapse-right">
-                <a href="javascript:void(0)" class="close-collapsenavbar fechanavbr" data-toggle="collapse" data-target="#navbar-collapse-1"><span class="ti-close"></span></a>
-                
-                <div class="navigation-main">
-                    <div class="container-fluid">
-                        <ol class="breadcrumb breadcrumb-header">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Library</a></li>
-                            <li class="active">Data</li>
-                        </ol>
-                        <!-- Tornar hover de novo: <ul class="nav navbar-nav navigation-theme" data-hover="dropdown" data-animations="none">-->
-                        <ul class="nav navbar-nav navigation-theme navbar-right" data-hover="dropdown" data-animations="none">
-                            <li class="menu-item">
-                                <a href="javascript:void(0)" class="menu-item-principal">Guia do aluno</a>
-                            </li>
-                            <li class="dropdown menu-item">
-                                <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Área temática</a>
-                                <ul class="dropdown-menu dropdown-menu-right open">
-                                    <li>
-                                        <div class="navbar-theme-content">
-                                            <div class="row">
-                                                <ul class="col-sm-6 theme-submenu">
-                                                    <li><a href="#">Lorem ipsum</a></li>
-                                                    <li><a href="#">Dolor Set</a></li>
-                                                    <li><a href="#">Vectelius dolor</a></li>
-                                                    <li><a href="#">Situs atibatus</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        
-                        
-                        </ul>
-                    </div>
+        </div>
+    </div>
+</div>
+
+<!-- /.nav -->
+<div class="wrapper">
+    <!-- stripe especial inicial -->
+    <div class="striper striper-lg striper-home text-white gradiente01">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 text-left">
+                    <h3>Programa de Formação Modular de Preceptores</h3>
+
+                    <p class="mt-mt">
+                        <a href="#modal-avaliacaodiagnostica" class="btn btn-round-lg outline mt-md" data-toggle="modal"
+                           data-target="#modal-avaliacaodiagnostica">Avaliação Diagnóstica</a>
+                    </p>
                 </div>
             </div>
-        
-        </nav>
-        <!-- /.nav -->
-        
-        <div class="wrapper">
-            <!-- stripe especial inicial -->
-            <div class="special-striper-back text-white" style="background-image: url('assets/img/backgrounds/foto-Intro-001.jpg')">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3 text-center">
-                            <p class="fontsize-mdplus">Programa de formação de preceptores
-                                <br> na perspectiva da utilização dos</p>
-                            <h1>COAPES</h1>
-                            
-                            <p class="fontsize-mdplus font-second">Nam condimentum vitae ligula vel ornare.
-                                <br>Phasellus at semper turpis.</p>
-                            <p class="mt-mt">
-                                <a href="#" class="btn btn-round-lg fontsize-sm btn-success mt-md text-uppercase"> Entenda o Coaps </a>
+        </div>
+    </div>
+    <!-- ./ stripe especial inicial -->
+    <!-- conteudo -->
+    <div class="container striper-md">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Áreas Temáticas</h2>
+                <p>Programa de Formação Modular de Preceptores</p>
+            </div>
+        </div>
+        <div class="row mt-md">
+            <div class="col-md-9">
+                <div>
+                    <div class="panel panel-default panel-box-two">
+                        <div class="panel-heading bck-tema-1">
+                            <small class="text-uppercase">
+                                área temática
+                            </small>
+                            <h3>Atenção à Saúde</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled</p>
+                            <p class="mt-md">
+                                <a href="pagina-tema01.html" class="btn btn-round back-dark-blue text-white">Acesse</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-lg">
+                    <div class="panel panel-default panel-box-two">
+                        <div class="panel-heading bck-tema-2">
+                            <small class="text-uppercase">
+                                área temática
+                            </small>
+                            <h3>Abordagem Familiar e comunitária</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled</p>
+                            <p class="mt-md">
+                                <a href="#" class="btn btn-round bck-tema-2 text-white">Acesse</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-lg">
+                    <div class="panel panel-default panel-box-two">
+                        <div class="panel-heading bck-tema-3">
+                            <small class="text-uppercase">
+                                área temática
+                            </small>
+                            <h3>Educação</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled</p>
+                            <p class="mt-md">
+                                <a href="#" class="btn btn-round bck-tema-3 text-white">Acesse</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-lg">
+                    <div class="panel panel-default panel-box-two">
+                        <div class="panel-heading bck-tema-4">
+                            <small class="text-uppercase">
+                                área temática
+                            </small>
+                            <h3>Fundamentos do SUS</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled</p>
+                            <p class="mt-md">
+                                <a href="#" class="btn btn-round bck-tema-4 text-white">Acesse</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-lg">
+                    <div class="panel panel-default panel-box-two">
+                        <div class="panel-heading bck-tema-5">
+                            <small class="text-uppercase">
+                                área temática
+                            </small>
+                            <h3>Gestão em Saúde</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled</p>
+                            <p class="mt-md">
+                                <a href="#" class="btn btn-round bck-tema-5-dark text-white">Acesse</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-lg">
+                    <div class="panel panel-default panel-box-two">
+                        <div class="panel-heading bck-tema-6">
+                            <small class="text-uppercase">
+                                área temática
+                            </small>
+                            <h3>Promoção em saúde</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled</p>
+                            <p class="mt-md">
+                                <a href="#" class="btn btn-round bck-tema-6 text-white">Acesse</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-lg">
+                    <div class="panel panel-default panel-box-two">
+                        <div class="panel-heading bck-tema-7">
+                            <small class="text-uppercase">
+                                área temática
+                            </small>
+                            <h3>Trabalho em Equipe</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled</p>
+                            <p class="mt-md">
+                                <a href="#" class="btn btn-round bck-tema-7 text-white">Acesse</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-lg">
+                    <div class="panel panel-default panel-box-two">
+                        <div class="panel-heading bck-tema-8">
+                            <small class="text-uppercase">
+                                área temática
+                            </small>
+                            <h3>Valores proﬁssionais</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled</p>
+                            <p class="mt-md">
+                                <a href="#" class="btn btn-round bck-tema-8 text-white">Acesse</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-lg">
+                    <div class="panel panel-default panel-box-two">
+                        <div class="panel-heading bck-tema-9">
+                            <small class="text-uppercase">
+                                área temática
+                            </small>
+                            <h3>Comunicação</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled</p>
+                            <p class="mt-md">
+                                <a href="#" class="btn btn-round bck-tema-9 text-white">Acesse</a>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- ./ stripe especial inicial -->
-            <div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="custom-tabs">
-                            <div class="container mt-md">
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs" role="tablist">
-                                    <li role="presentation" class="active">
-                                        <a href="#tab-1-1" aria-controls="tab-1-1" role="tab" data-toggle="tab">Conteúdo completo</a>
-                                    </li>
-                                    <li role="presentation">
-                                        <a href="#tab-1-2" aria-controls="tab-1-2" role="tab" data-toggle="tab">Microcursos matriculados</a>
-                                    </li>
-                                </ul>
+            <div class="col-md-3 hidden-sm">
+                <div class="panel panel-default panel-box-two">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <p class="fontsize-sm text-uppercase">Como funciona o programa?</p>
                             </div>
-                            
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <!-- tab 1 -->
-                                <div role="tabpanel" class="tab-pane" id="tab-1-1">
-                                    <div class="box-base box-shadowened">
-                                        <div class="container pt-lg pb-lg">
-                                            <div class="row">
-                                                <div class="col-xs-12">
-                                                    <div class="text-center">
-                                                        <h4>Para entender melhor</h4>
-                                                        <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-3 text-center mt-md">
-                                                    <img class="img-adaptative" src="assets/img/icones/timeline.png" width="106px">
-                                                    <p class="mt-sm"><strong>Carga horária mínima</strong></p>
-                                                    <p class="fontsize-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor</p>
-                                                </div>
-                                                <div class="col-sm-3 text-center mt-md">
-                                                    <img class="img-adaptative" src="assets/img/icones/strategy.png" width="106px">
-                                                    <p class="mt-sm"><strong>No seu tempo</strong></p>
-                                                    <p class="fontsize-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor</p>
-                                                </div>
-                                                <div class="col-sm-3 text-center mt-md">
-                                                    <img class="img-adaptative" src="assets/img/icones/alvo.png" width="106px">
-                                                    <p class="mt-sm"><strong>Os temas</strong></p>
-                                                    <p class="fontsize-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor</p>
-                                                </div>
-                                                <div class="col-sm-3 text-center mt-md">
-                                                    <img class="img-adaptative" src="assets/img/icones/mindset.png" width="106px">
-                                                    <p class="mt-sm"><strong>Microcursos</strong></p>
-                                                    <p class="fontsize-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="container mt-lg">
-                                        <div class="row">
-                                            <div class="col-xs-12">
-                                                <h4>Conteúdo temático</h4>
-                                                <p>Programa de Formação de Preceptores na perspectiva da utilização dos COAPES </p>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-md">
-                                            <div class="col-xs-12">
-                                                <div class="panel panel-default panel-box-one finished-success">
-                                                    <div class="panel-body panelbody-p-0">
-                                                        
-                                                        <div class="row">
-                                                            <div class="col-xs-3 destimg-box-one" style="background-image: url('assets/img/fotos/foto001.jpg')">
-                                                            
-                                                            </div>
-                                                            <div class="col-sm-5 col-xs-12">
-                                                                <div class="p-all-lg">
-                                                                    <p class="separator">Área Temática</p>
-                                                                    <h4>Atenção à Saúde</h4>
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-4 col-xs-12">
-                                                                
-                                                                <div class="divider-left p-all-lg">
-                                                                    <p class="separator">Principais microcursos</p>
-                                                                    <ul class="list-unstyled fontsize-sm">
-                                                                        <li class="mt-md">Microcurso Reconhecimento De Território</li>
-                                                                        <li class="mt-md">Microcurso Rede Integrada E Cuidados Integrados</li>
-                                                                        <li class="mt-md">
-                                                                            <a href="#" class="btn btn-round-sm fontsize-sm btn-success mt-md text-uppercase">Veja tudo</a>
-                                                                        
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="panel-footer p-all">
-                                                            <div class="row">
-                                                                <div class="col-xs-6">
-                                                                    7 Microcursos concluídos, totalizando 00h
-                                                                </div>
-                                                                <div class="col-xs-6">
-                                                                    1235 matriculados
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <!-- box -->
-                                                <div class="panel panel-default panel-box-one">
-                                                    <div class="panel-body panelbody-p-0">
-                                                        
-                                                        <div class="row">
-                                                            <div class="col-xs-3 destimg-box-one" style="background-image: url('assets/img/fotos/foto001.jpg')">
-                                                            
-                                                            </div>
-                                                            <div class="col-sm-5 col-xs-12">
-                                                                <div class="p-all-lg">
-                                                                    <p class="separator">Área Temática</p>
-                                                                    <h4>Atenção à Saúde</h4>
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-4 col-xs-12">
-                                                                
-                                                                <div class="divider-left p-all-lg">
-                                                                    <p class="separator">Principais microcursos</p>
-                                                                    <ul class="list-unstyled fontsize-sm">
-                                                                        <li class="mt-md">Microcurso Reconhecimento De Território</li>
-                                                                        <li class="mt-md">Microcurso Rede Integrada E Cuidados Integrados</li>
-                                                                        <li class="mt-md">
-                                                                            <a href="#" class="btn btn-round-sm fontsize-sm btn-success mt-md text-uppercase">Veja tudo</a>
-                                                                        
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="panel-footer">
-                                                            <div class="row">
-                                                                <div class="col-xs-6">
-                                                                    7 Microcursos concluídos, totalizando 00h
-                                                                </div>
-                                                                <div class="col-xs-6">
-                                                                    1235 matriculados
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                                
-                                                <!-- box -->
-                                                <div class="panel panel-default panel-box-one">
-                                                    <div class="panel-body panelbody-p-0">
-                                                        
-                                                        <div class="row">
-                                                            <div class="col-xs-3 destimg-box-one" style="background-image: url('assets/img/fotos/foto001.jpg')">
-                                                            
-                                                            </div>
-                                                            <div class="col-sm-5 col-xs-12">
-                                                                <div class="p-all-lg">
-                                                                    <p class="separator">Área Temática</p>
-                                                                    <h4>Atenção à Saúde</h4>
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-4 col-xs-12">
-                                                                
-                                                                <div class="divider-left p-all-lg">
-                                                                    <p class="separator">Principais microcursos</p>
-                                                                    <ul class="list-unstyled fontsize-sm">
-                                                                        <li class="mt-md">Microcurso Reconhecimento De Território</li>
-                                                                        <li class="mt-md">Microcurso Rede Integrada E Cuidados Integrados</li>
-                                                                        <li class="mt-md">
-                                                                            <a href="#" class="btn btn-round-sm fontsize-sm btn-success mt-md text-uppercase">Veja tudo</a>
-                                                                        
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="panel-footer">
-                                                            <div class="row">
-                                                                <div class="col-xs-6">
-                                                                    7 Microcursos concluídos, totalizando 00h
-                                                                </div>
-                                                                <div class="col-xs-6">
-                                                                    1235 matriculados
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                
-                                </div>
-                                <!-- / tab 1 -->
-                                
-                                <!-- tab 2 -->
-                                <div role="tabpanel" class="tab-pane active" id="tab-1-2">
-    
-                                    <div class="box-base box-shadowened">
-                                        <div class="container pt-lg pb-lg">
-                                            <div class="row">
-                                                <div class="col-xs-12">
-                                                    <div class="text-center">
-                                                        <h4>Seu andamento na formação</h4>
-                                                        <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique.</p>
-                                                    </div>
-                                                    <div class="formacao-status">
-                                                        <div class="progress">
-                                                            
-                                                            <div class="progress-bar progress-bar progress-bar-blue" style="width: 20%">
-                                                                <span class="tooltip-show"  data-toggle="tooltip" data-placement="top" title="Formação" >20%</span>
-                                                            </div>
-                                                            <div class="progress-bar progress-bar-warning" style="width: 10%">
-                                                                <span class="tooltip-show"  data-toggle="tooltip" data-placement="bottom" title="COAPES">10%</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-xs-12">
-                                            
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                
-                                </div>
-                                <!-- / tab 2 -->
+                        </div>
+                        <div class="row mt-md">
+                            <div class="col-xs-3 text-right">
+                                <img class="img-adaptative" src="assets/img/icones/box-step-1.png">
                             </div>
-                        
+                            <div class="col-xs-9">
+                                <p class="fontsize-sm">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit</p>
+                            </div>
+                        </div>
+                        <div class="row mt-md">
+                            <div class="col-xs-3 text-right">
+                                <img class="img-adaptative" src="assets/img/icones/box-step-2.png">
+                            </div>
+                            <div class="col-xs-9">
+                                <p class="fontsize-sm">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit</p>
+                            </div>
+                        </div>
+                        <div class="row mt-md">
+                            <div class="col-xs-3 text-right">
+                                <img class="img-adaptative" src="assets/img/icones/box-step-3.png">
+                            </div>
+                            <div class="col-xs-9">
+                                <p class="fontsize-sm">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        
         </div>
-        
-        
-        <script src="assets/js/jquery.js"></script>
-        <script src="assets/js/tether.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/bootstrap-dropdownhover.min.js"></script>
-        <script src="assets/js/theme.js"></script>
-    
-    </body>
+    </div>
+
+</div>
+<!-- ./ wrapper -->
+
+
+<!-- ---------------------- modais ----------------------- -->
+
+
+<!-- modal Objetivos -->
+<div class="modal fade" tabindex="-1" role="dialog" id="modal-objetivos">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <p class="separator">Área Temática</p>
+                <h5>Nome do microcurso</h5>
+                <small>Descrição resumida</small>
+            </div>
+            <div class="modal-body">
+                <p>One fine body&hellip;</p>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!-- Modal Guia do aluno -->
+<div class="modal fade modal-with-sidebar" id="modal-guiaaluno" tabindex="-1" role="dialog"
+     aria-labelledby="modal-guiaaluno">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Guia do aluno</h4>
+                <p><small>Programa de Formação Modular de Preceptores na perspectiva da utilização dos COAPES</small>
+                </p>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+
+                    <!-- nav -->
+                    <div class="col-sm-5">
+                        <nav class="navbar navbar-default nav-modal">
+                            <div class="container-fluid">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span>Opções</span>
+                                    </button>
+                                </div>
+
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li><a href="#">Curabitur lobortis id lorem id bibendum</a></li>
+                                        <li><a href="#">Curabitur lobortis id lorem id bibendum</a></li>
+                                        <li><a href="#">Curabitur lobortis id lorem id bibendum</a></li>
+                                        <li><a href="#">Curabitur lobortis id lorem id bibendum</a></li>
+                                        <li><a href="#">Curabitur lobortis id lorem id bibendum</a></li>
+                                        <li><a href="#">Curabitur lobortis id lorem id bibendum</a></li>
+                                        <li><a href="#">Curabitur lobortis id lorem id bibendum</a></li>
+                                        <li><a href="#">Curabitur lobortis id lorem id bibendum</a></li>
+                                        <li><a href="#">Curabitur lobortis id lorem id bibendum</a></li>
+                                        <li><a href="#">Curabitur lobortis id lorem id bibendum</a></li>
+                                        <li><a href="#">Curabitur lobortis id lorem id bibendum</a></li>
+                                        <li><a href="#">Curabitur lobortis id lorem id bibendum</a></li>
+                                    </ul>
+
+                                </div><!-- /.navbar-collapse -->
+                            </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
+                    <!-- nav -->
+                    <div class="col-sm-7 modal-conteudo">
+                        <h4>Lorem ipsum</h4>
+                        <p> Curabitur lobortis id lorem id bibendum.
+                            Ut id consectetur magna.
+                            Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi
+                            sollicitudin porttitor id sit amet risus.
+                        </p>
+                        <h5>Lorem ipsum</h5>
+                        <p>
+                            Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum.
+                            Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper
+                            suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.
+                        </p>
+                        <p><strong>Lorem ipsum</strong></p>
+                        <p>
+                            Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum.
+                            Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper
+                            suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.
+                        </p>
+                        <h4>Lorem ipsum</h4>
+                        <p> Curabitur lobortis id lorem id bibendum.
+                            Ut id consectetur magna.
+                            Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi
+                            sollicitudin porttitor id sit amet risus.
+                        </p>
+                        <h5>Lorem ipsum</h5>
+                        <p>
+                            Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum.
+                            Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper
+                            suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.
+                        </p>
+                        <p><strong>Lorem ipsum</strong></p>
+                        <p>
+                            Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum.
+                            Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper
+                            suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.
+                        </p>
+                        <h4>Lorem ipsum</h4>
+                        <p> Curabitur lobortis id lorem id bibendum.
+                            Ut id consectetur magna.
+                            Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi
+                            sollicitudin porttitor id sit amet risus.
+                        </p>
+                        <h5>Lorem ipsum</h5>
+                        <p>
+                            Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum.
+                            Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper
+                            suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.
+                        </p>
+                        <p><strong>Lorem ipsum</strong></p>
+                        <p>
+                            Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum.
+                            Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper
+                            suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.
+                        </p>
+                        <h4>Lorem ipsum</h4>
+                        <p> Curabitur lobortis id lorem id bibendum.
+                            Ut id consectetur magna.
+                            Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi
+                            sollicitudin porttitor id sit amet risus.
+                        </p>
+                        <h5>Lorem ipsum</h5>
+                        <p>
+                            Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum.
+                            Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper
+                            suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.
+                        </p>
+                        <p><strong>Lorem ipsum</strong></p>
+                        <p>
+                            Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum.
+                            Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper
+                            suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.
+                        </p>
+                        <h4>Lorem ipsum</h4>
+                        <p> Curabitur lobortis id lorem id bibendum.
+                            Ut id consectetur magna.
+                            Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi
+                            sollicitudin porttitor id sit amet risus.
+                        </p>
+                        <h5>Lorem ipsum</h5>
+                        <p>
+                            Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum.
+                            Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper
+                            suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.
+                        </p>
+                        <p><strong>Lorem ipsum</strong></p>
+                        <p>
+                            Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum.
+                            Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper
+                            suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Avaliação Diagnóstica -->
+<div class="modal fade" id="modal-avaliacaodiagnostica" tabindex="-1" role="dialog"
+     aria-labelledby="AvaliacaoDiagnostica">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Avaliação Diagnóstica</h4>
+                <p><small>Programa de Formação Modular de Preceptores na perspectiva da utilização dos COAPES</small>
+                </p>
+            </div>
+            <div class="modal-body">
+                <div class="striper-lg text-center">
+                    <img src="assets/img/fotos/modelo.png" class="img-adaptative">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- modal Objetivos -->
+<div class="modal fade" tabindex="-1" role="dialog" id="modal-progresso">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h3>Seu progresso no programa</h3>
+                <small>Programa modular educacional de aperfeiçoamento de preceptores na perspectiva da utilização do
+                    COAPES</small>
+            </div>
+            <div class="modal-body">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="mt-mt">
+                                    <small>Carga horária total</small>
+                                    <p>000 horas</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mt-mt">
+                                    <small>Sua carga horária total executada</small>
+                                    <p class="text-green"><strong>000 horas</strong></p>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-xs-9">
+                                        <div class="mt-sm">
+                                            <div class="progress theme-progressbar progress-sm">
+                                                <div class="progress-bar progress-bar-success" role="progressbar"
+                                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                                     style="width: 40%">
+                                                    <span class="sr-only">000 horas</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <p class="mt-xs">
+                                            <small><strong>000 horas</strong></small></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-info" role="alert">
+                    <p class="icon-blocked">
+                        <i class="uil-info-circle icon-blocked-icon fontsize-lg"></i>
+                        <span class="icon-blocked-span">Você ainda não completou 180 horas de estudos e ainda não está apto a realizar a
+                                avaliação para obter o certificado de aperfeiçoamento</span>
+                    </p>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/tether.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-dropdownhover.min.js"></script>
+<script src="assets/js/theme.js"></script>
+
+</body>
 
 </html>
